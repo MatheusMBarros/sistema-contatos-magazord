@@ -20,8 +20,7 @@ Antes de começar, certifique-se de ter os seguintes instalados:
 2.  **Inicializar o Ambiente com Docker Compose:**
     Execute o seguinte comando para construir as imagens e iniciar os contêineres:
     ```bash
-    docker-compose up -d --build
-    ```
+        docker-compose up -d --build --remove-orphans    ```
     Este comando irá:
     - Construir a imagem do serviço `web` a partir do `Dockerfile`.
     - Iniciar o contêiner do banco de dados `db` (MySQL).
@@ -31,8 +30,18 @@ Antes de começar, certifique-se de ter os seguintes instalados:
 3.  **Aguardar a Inicialização:**
     Pode levar alguns minutos para o banco de dados e a aplicação estarem totalmente operacionais na primeira execução.
 
-4.  **Acessar a Aplicação:**
-    Abra seu navegador e acesse `http://localhost:8080`
+5.  **Instalando Dependências:**
+       Instale as dependencias do composer
+     ```bash
+         docker exec -it <nome_do_container_web> bash
+         cd /var/www/html
+         composer install
+         exit
+         ```
+ -  **Observação:** O `<nome_do_container_web>` deve ser substituído pelo nome correto do seu contêiner. O comando `docker ps` ajuda a identificar este nome.
+
+
+6. Abra seu navegador e acesse `http://localhost:8080`
 
 ## Executando a Aplicação
 
