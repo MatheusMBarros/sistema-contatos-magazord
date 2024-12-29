@@ -13,7 +13,7 @@ Antes de começar, certifique-se de ter os seguintes instalados:
 
 1.  **Clone o Repositório:**
     ```bash
-    git clone sistema-contatos-magazord
+    git clone https://github.com/MatheusMBarros/sistema-contatos-magazord.git
     cd sistema-contatos-magazord
     ```
 
