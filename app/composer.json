@@ -1,0 +1,22 @@
+{
+  "name": "vendor/sistema-contatos-magazord",
+  "require": {
+      "php": "^8.1",
+      "doctrine/orm": "^3.3",
+      "doctrine/dbal": "^4.1",
+      "doctrine/migrations": "^3.8",
+      "symfony/cache": "^6.4"
+  },
+  "authors": [
+      {
+          "name": "Matheus Barros"
+      }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+      "psr-4": {
+          "Controller\\": "Controller/",
+          "Models\\": "Models/"
+      }
+  }
+}

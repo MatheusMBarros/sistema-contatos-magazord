@@ -1,0 +1,46 @@
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDEs e editores
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vscode/
+
+# Composer
+/vendor/
+composer.lock
+
+# Logs e relatórios
+*.log
+*.cache
+*.out
+*.err
+
+# Arquivos de banco de dados locais
+*.sqlite
+*.sqlite3
+
+# Configuração de ambiente
+.env
+.env.*
+
+# Cache e arquivos temporários
+/cache/
+/tmp/
+
+# Outros
+node_modules/
+*.bak
+*.swp
+*.zip
+*.tar
+*.gz
+*.tgz
+*.rar
+*.7z
+
+# Ignorar a pasta db (banco de dados)
+db/
+vendor/

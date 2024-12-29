@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+// bin/doctrine
+
+use Doctrine\ORM\Tools\Console\ConsoleRunner;
+use Doctrine\ORM\Tools\Console\EntityManagerProvider\SingleManagerProvider;
+
+// Inclua o arquivo bootstrap.php que configura a conexão com o banco e o EntityManager
+require __DIR__ . '/../bootstrap.php';
+
+// Inicializa o ConsoleRunner com o EntityManager
+ConsoleRunner::run(
+    new SingleManagerProvider($entityManager)
+);
