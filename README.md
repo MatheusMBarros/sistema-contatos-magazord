@@ -40,7 +40,9 @@ Antes de começar, certifique-se de ter os seguintes instalados:
          ```
  -  **Observação:** O `<nome_do_container_web>` deve ser substituído pelo nome correto do seu contêiner. O comando `docker ps` ajuda a identificar este nome.
 
-
+6. Crie as tabelas no banco de dados
+    Acesse o container que WEB e esecute o seguinte comando: php bin/doctrine orm:schema-tool:create
+   
 6. Abra seu navegador e acesse `http://localhost:8080`
 
 ## Executando a Aplicação
