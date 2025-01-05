@@ -48,6 +48,7 @@
                         <div class="custom-input">
                             <label for="pessoa_id">Pessoa:</label>
                             <select class="form-control" name="pessoa_id" required>
+                                <option>Selecione uma pessoa</option>
                                 <?php if(isset($pessoas)): ?>
                                     <?php foreach ($pessoas as $pessoa): ?>
                                         <option value="<?= $pessoa->getId() ?>"><?= $pessoa->getNome() ?></option>

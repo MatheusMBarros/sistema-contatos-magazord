@@ -57,8 +57,9 @@ class ContatoController
         $pessoaId = $_POST['pessoa_id'] ?? '';
         $tipo = $_POST['tipo'] ?? '';
         $descricao = $_POST['descricao'] ?? '';
+
         
-        if (empty($pessoaId) || empty($tipo) || empty($descricao)) {
+        if (empty($tipo) || empty($descricao)) {
             $this->renderView('error', ['message' => 'Todos os campos são obrigatórios.']);
             return;
         }
