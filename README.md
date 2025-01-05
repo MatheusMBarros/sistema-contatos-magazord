@@ -20,7 +20,8 @@ Antes de começar, certifique-se de ter os seguintes instalados:
 2.  **Inicializar o Ambiente com Docker Compose:**
     Execute o seguinte comando para construir as imagens e iniciar os contêineres:
     ```bash
-        docker-compose up -d --build --remove-orphans    ```
+        docker-compose up -d --build --remove-orphans
+    ```
     Este comando irá:
     - Construir a imagem do serviço `web` a partir do `Dockerfile`.
     - Iniciar o contêiner do banco de dados `db` (MySQL).
@@ -37,7 +38,7 @@ Antes de começar, certifique-se de ter os seguintes instalados:
          cd /var/www/html
          composer install
          exit
-         ```
+     ```
  -  **Observação:** O `<nome_do_container_web>` deve ser substituído pelo nome correto do seu contêiner. O comando `docker ps` ajuda a identificar este nome.
 
 6. Crie as tabelas no banco de dados
